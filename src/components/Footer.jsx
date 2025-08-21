@@ -2,10 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-blue-900 text-white py-6 mt-auto">
-      <div className="container mx-auto text-center">
-        &copy; 2025 MyBrand. Built with React & Tailwind.
-      </div>
+    <footer className="p-6 bg-black border-t border-gray-800 text-center text-gray-400">
+      &copy; 2025 YourPortfolio. All rights reserved.
     </footer>
   );
 }
