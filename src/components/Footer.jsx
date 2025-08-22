@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Footer() {
+export default function Footer({ text }) {
   return (
-    <footer className="p-6 bg-black border-t border-gray-800 text-center text-gray-400">
-      &copy; 2025 YourPortfolio. All rights reserved.
+    <footer className="p-6 text-center border-t border-gray-700">
+      {text}
     </footer>
   );
 }

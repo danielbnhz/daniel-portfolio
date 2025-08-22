@@ -1,5 +1,7 @@
 import React from "react";
 import PortfolioCard from "./components/Portfoliocard";
+import Footer from "./components/Footer"
+import Header from "./components/Header"
 
 export default function App() {
   const projects = [
@@ -10,9 +12,8 @@ export default function App() {
 
   return (
     <div className="bg-white min-h-screen">
-      <header className="p-6 text-center text-3xl font-bold border-b border-gray-700">
-        My Portfolio
-      </header>
+      {/* Header Component */}
+      <Header title="My Portfolio - Daniel Hernandez" />
 
       <main className="flex flex-wrap justify-center gap-8 p-10">
         {projects.map((project, index) => (
@@ -24,9 +25,8 @@ export default function App() {
         ))}
       </main>
 
-      <footer className="p-6 text-center border-t border-gray-700">
-        &copy; 2025 MyName
-      </footer>
+      {/* Footer Component */}
+      <Footer text="© 2025 Daniel Hernandez" />
     </div>
   );
 }

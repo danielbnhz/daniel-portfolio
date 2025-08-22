@@ -1,17 +1,9 @@
 import React from "react";
 
-export default function Header() {
+export default function Header({ title }) {
   return (
-    <header className="flex bg-blue-600 justify-between items-center p-6 bg-black border-b border-gray-800">
-      <div className="text-2xl font-bold text-blue-400">TechBrand</div>
-      <nav>
-        <ul className="flex gap-4">
-          <li><a href="#" className="hover:text-blue-300">Home</a></li>
-          <li><a href="#" className="hover:text-blue-300">About</a></li>
-          <li><a href="#" className="hover:text-blue-300">Projects</a></li>
-          <li><a href="#" className="hover:text-blue-300">Contact</a></li>
-        </ul>
-      </nav>
+    <header className="p-6 text-center text-3xl font-bold border-b border-gray-700">
+      {title}
     </header>
   );
 }
