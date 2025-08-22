@@ -5,7 +5,7 @@ export default function PortfolioCard({ title, bgColor, textColor }) {
     <section
       className={`rounded-lg shadow-lg w-80 text-center p-10 bg-sky-500 text-white`}
     >
-      <div className="bg-gray-200 h-40 w-full mb-4 rounded-md flex items-center justify-center">
+      <div className="bg-gray-200 h-40 w-full mb-4 rounded-md flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
         <span className="text-gray-500">Preview Image</span>
       </div>
 
