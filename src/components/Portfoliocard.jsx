@@ -1,11 +1,11 @@
 import React from "react";
 
-export default function PortfolioCard({ title, description }) {
+export default function PortfolioCard({ title, bgColor, textColor }) {
   return (
-    <div className="max-w-sm mx-auto bg-blue-600 text-white rounded-lg shadow-lg p-6 my-6">
-    <h2 className="text-xl font-bold mb-2">Project Name</h2>
-    <p className="text-sm">Short description of this project.</p>
-    <a href="#" className="text-blue-200 underline mt-4 inline-block">View Project</a>
-    </div>
-    );
+    <section
+      className={`rounded-lg shadow-lg w-80 text-center p-10 bg-sky-500 text-white`}
+    >
+      {title}
+    </section>
+  );
 }

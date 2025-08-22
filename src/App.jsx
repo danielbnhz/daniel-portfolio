@@ -1,22 +1,27 @@
 import React from "react";
+import PortfolioCard from "./components/Portfoliocard";
 
 export default function App() {
+  const projects = [
+    { title: "Project 1" },
+    { title: "Project 2"},
+    { title: "Project 3" },
+  ];
+
   return (
-    <div className="bg-black min-h-screen text-white">
+    <div className="bg-white min-h-screen">
       <header className="p-6 text-center text-3xl font-bold border-b border-gray-700">
         My Portfolio
       </header>
 
-      <main className="p-10 flex flex-col items-center gap-8">
-        <div className="bg-blue-400 text-white p-6 rounded-lg shadow-lg w-80 text-center">
-          Project 1
-        </div>
-        <div className="bg-blue-300 text-white p-6 rounded-lg shadow-lg w-80 text-center">
-          Project 2
-        </div>
-        <div className="bg-blue-200 text-black p-6 rounded-lg shadow-lg w-80 text-center">
-          Project 3
-        </div>
+      <main className="flex flex-wrap justify-center gap-8 p-10">
+        {projects.map((project, index) => (
+          <PortfolioCard
+            key={index}
+            title={project.title}
+
+          />
+        ))}
       </main>
 
       <footer className="p-6 text-center border-t border-gray-700">
