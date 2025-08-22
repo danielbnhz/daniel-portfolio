@@ -2,6 +2,7 @@ import React from "react";
 import PortfolioCard from "./components/Portfoliocard";
 import Footer from "./components/Footer"
 import Header from "./components/Header"
+import Banner from "./components/Banner"
 
 export default function App() {
   const projects = [
@@ -14,6 +15,7 @@ export default function App() {
     <div className="bg-white min-h-screen">
       {/* Header Component */}
       <Header title="My Portfolio - Daniel Hernandez" />
+      <Banner />
 
       <main className="flex flex-wrap justify-center gap-8 p-10">
         {projects.map((project, index) => (
