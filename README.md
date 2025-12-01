@@ -1,5 +1,8 @@
 __this is my portfolio page__
-**For Daniel Hernandez**
+
+
+**By Daniel Hernandez**
+---------------------------
 
 Here will be a few projects. The portfolio page itself utilizes tailwind, react, and vite. It is still under construction.
 
