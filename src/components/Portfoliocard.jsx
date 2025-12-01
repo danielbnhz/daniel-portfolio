@@ -1,16 +1,32 @@
 import React from "react";
 
-export default function PortfolioCard({ title, bgColor, textColor }) {
+export default function PortfolioCard({ title, description, bgColor = "bg-sky-500", textColor = "text-white" }) {
   return (
     <section
-      className={`rounded-lg shadow-lg w-80 text-center p-10 bg-sky-500 text-white`}
+      className={`
+        ${bgColor} ${textColor} 
+        rounded-xl shadow-lg 
+        w-80 text-center p-8 
+        transform transition-transform duration-300 
+        hover:scale-105 hover:shadow-2xl
+      `}
     >
-      <div className="bg-gray-200 h-40 w-full mb-4 rounded-md flex items-center justify-center transform transition-transform duration-300 hover:scale-105">
+      {/* Image / preview */}
+      <div
+        className="
+          bg-gray-200 h-40 w-full mb-4 rounded-md 
+          flex items-center justify-center 
+          shadow-inner
+          transform transition-transform duration-300 
+          hover:scale-105
+        "
+      >
         <span className="text-gray-500">Preview Image</span>
       </div>
 
       {/* Project title */}
-      <h3 className="text-xl font-semibold">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <p className="text-white">{description}</p>
     </section>
   );
 }

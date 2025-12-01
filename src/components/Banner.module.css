@@ -13,7 +13,7 @@
 .banner-overlay {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: lch(18.64% 42.4 289.95 / 0.781);
   display: flex;
   justify-content: center;
   align-items: center;

@@ -6,23 +6,24 @@ import Banner from "./components/Banner"
 
 export default function App() {
   const projects = [
-    { title: "Project 1" },
-    { title: "Project 2"},
-    { title: "Project 3" },
+    { title: "Code_Business" , description: "Coming soon"},
+    { title: "SortingVisualizer", description: "Under Construction" },
+    { title: "Sketches" , description: "Under Construction" }
   ];
 
   return (
-    <div className="bg-white min-h-screen">
+    <div className="flex flex-col min-h-screen bg-white">
       {/* Header Component */}
-      <Header title="My Portfolio - Daniel Hernandez" />
+      <Header title="Hello 👋" />
       <Banner />
 
-      <main className="flex flex-wrap justify-center gap-8 p-10">
+      {/* Main Content */}
+      <main className="flex-1 flex flex-wrap justify-center gap-8 p-10">
         {projects.map((project, index) => (
           <PortfolioCard
             key={index}
             title={project.title}
-
+            description={project.description}
           />
         ))}
       </main>
