@@ -11,8 +11,13 @@ Will update this readme and the project
 
 to get operational locally
 
-npm install
-
+```bash
+    npm install
+```
 Then
 
-npm run dev
+```bash
+    npm run dev
+```
+
+This portfolio will start off with 3 webapps and expand later on. It will be a sorting visualizer, a sketch with p5 js, and a mockup of a tech company's webpage
